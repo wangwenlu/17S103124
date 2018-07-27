@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>ueditor demo</title>
+</head>
+
+<body>
+<form action="/JpushServerTest/SendServlet" method="post">
+    <script id="container" name="content" type="text/plain">
+    </script>
+    <input type="hidden" name="apikey">123
+    <input type="hidden" name="apimaster">${param.APImaster}
+    <input type="submit" value="submit">
+    <script type="text/javascript" src="ueditor.config.js"></script>
+    <script type="text/javascript" src="ueditor.all.js"></script>
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
+    </form>
+</body>
+
+</html>
